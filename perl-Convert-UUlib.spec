@@ -29,7 +29,7 @@ koduj±cej/rozkodowuj±cej uulib (nazywanej te¿ uudeview/uuenview).
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
