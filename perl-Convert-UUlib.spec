@@ -19,8 +19,8 @@ Summary(sv):	Convert::UUlib Perlmodul
 Summary(uk):	Модуль для Perl Convert::UUlib
 Summary(zh_CN):	Convert::UUlib Perl дё©И
 Name:		perl-Convert-UUlib
-Version:	0.212
-Release:	2
+Version:	0.213
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
