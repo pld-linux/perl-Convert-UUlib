@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Convert
 %define	pnam	UUlib
-%include	/usr/lib/rpm/macros.perl
 Summary:	Convert-UUlib perl module
 Summary(pl):	Modu³ perla Convert-UUlib
 Name:		perl-Convert-UUlib
 Version:	0.201
-Release:	2
-
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -21,7 +20,7 @@ Convert-UUlib - Perl interface to the uulib library.
 Convert-UUlib - interfjes perla dla biblioteki uulib.
 
 %prep
-%setup -q -n Convert-UUlib-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
