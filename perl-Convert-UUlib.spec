@@ -2,7 +2,7 @@
 Summary:	Convert-UUlib perl module
 Summary(pl):	Modu³ perla Convert-UUlib
 Name:		perl-Convert-UUlib
-Version:	0.111
+Version:	0.201
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
