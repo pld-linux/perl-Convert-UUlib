@@ -12,7 +12,7 @@ Vendor:		Marc Lehmann <pcg@goof.com>
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	dddc5740f71468d6df2f8c1971b787d1
-BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -30,12 +30,15 @@ koduj±cej/rozkodowuj±cej uulib (nazywanej te¿ uudeview/uuenview).
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-%{__make} OPTIMIZE="%{rpmcflags}"
+
+%{__make} \
+	OPTIMIZE="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -43,8 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README example-decoder
-%{perl_vendorarch}/Convert
-%dir %{perl_vendorarch}/auto/Convert
+%{perl_vendorarch}/Convert/*
 %dir %{perl_vendorarch}/auto/Convert/UUlib
 %{perl_vendorarch}/auto/Convert/UUlib/UUlib.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Convert/UUlib/UUlib.so
