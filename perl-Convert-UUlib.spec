@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Convert
-%define	pnam	UUlib
+%define		pdir	Convert
+%define		pnam	UUlib
 Summary:	Convert::UUlib - Perl interface to the uulib library
 Summary(pl):	Convert::UUlib - interfejs Perla dla biblioteki uulib
 Name:		perl-Convert-UUlib
