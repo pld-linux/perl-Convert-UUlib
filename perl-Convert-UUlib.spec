@@ -1,11 +1,26 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Convert
-%define	pnam	UUlib
-Summary:	Convert::UUlib perl module
-Summary(pl):	Modu³ perla Convert::UUlib
+%define		pdir	Convert
+%define		pnam	UUlib
+Summary:	Convert::UUlib Perl module
+Summary(cs):	Modul Convert::UUlib pro Perl
+Summary(da):	Perlmodul Convert::UUlib
+Summary(de):	Convert::UUlib Perl Modul
+Summary(es):	Módulo de Perl Convert::UUlib
+Summary(fr):	Module Perl Convert::UUlib
+Summary(it):	Modulo di Perl Convert::UUlib
+Summary(ja):	Convert::UUlib Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	Convert::UUlib ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul Convert::UUlib
+Summary(pl):	Modu³ Perla Convert::UUlib
+Summary(pt):	Módulo de Perl Convert::UUlib
+Summary(pt_BR):	Módulo Perl Convert::UUlib
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Convert::UUlib
+Summary(sv):	Convert::UUlib Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Convert::UUlib
+Summary(zh_CN):	Convert::UUlib Perl Ä£¿é
 Name:		perl-Convert-UUlib
 Version:	0.212
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -37,7 +52,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README example-decoder
-%{perl_sitearch}/Convert/UUlib.pm
+%{perl_sitearch}/Convert
+%dir %{perl_sitearch}/auto/Convert
 %dir %{perl_sitearch}/auto/Convert/UUlib
 %{perl_sitearch}/auto/Convert/UUlib/UUlib.bs
 %{perl_sitearch}/auto/Convert/UUlib/autosplit.ix
