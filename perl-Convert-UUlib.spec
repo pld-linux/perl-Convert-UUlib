@@ -4,8 +4,8 @@
 Summary:	Convert::UUlib perl module
 Summary(pl):	Modu³ perla Convert::UUlib
 Name:		perl-Convert-UUlib
-Version:	0.201
-Release:	3
+Version:	0.212
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
