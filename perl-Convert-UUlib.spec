@@ -7,6 +7,7 @@ Name:		perl-Convert-UUlib
 Version:	1.01
 Release:	1
 Epoch:		1
+# same as perl, but library is GPL
 License:	GPL
 Vendor:		Marc Lehmann <pcg@goof.com>
 Group:		Development/Languages/Perl
