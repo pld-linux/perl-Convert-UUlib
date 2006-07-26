@@ -11,7 +11,7 @@ Epoch:		2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	45a456bb8eb625b097f8a3dc15cc6a97
+# Source0-md5:	92514be4d146e8c4ea1941a7f7472dcb
 URL:		http://search.cpan.org/dist/Convert-UUlib/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
