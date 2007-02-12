@@ -2,7 +2,7 @@
 %define		pdir	Convert
 %define		pnam	UUlib
 Summary:	Convert::UUlib - Perl interface to the uulib library
-Summary(pl):	Convert::UUlib - interfejs Perla dla biblioteki uulib
+Summary(pl.UTF-8):   Convert::UUlib - interfejs Perla dla biblioteki uulib
 Name:		perl-Convert-UUlib
 Version:	1.06
 Release:	3
@@ -21,9 +21,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Convert::UUlib Perl module is an interface to the uulib
 decoding/encoding library (a.k.a uudeview/uuenview).
 
-%description -l pl
-Modu³ Perla Convert::UUlib stanowi interfejs Perla dla biblioteki
-koduj±cej/rozkodowuj±cej uulib (nazywanej te¿ uudeview/uuenview).
+%description -l pl.UTF-8
+ModuÅ‚ Perla Convert::UUlib stanowi interfejs Perla dla biblioteki
+kodujÄ…cej/rozkodowujÄ…cej uulib (nazywanej teÅ¼ uudeview/uuenview).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
