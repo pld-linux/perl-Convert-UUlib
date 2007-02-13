@@ -2,7 +2,7 @@
 %define		pdir	Convert
 %define		pnam	UUlib
 Summary:	Convert::UUlib - Perl interface to the uulib library
-Summary(pl.UTF-8):   Convert::UUlib - interfejs Perla dla biblioteki uulib
+Summary(pl.UTF-8):	Convert::UUlib - interfejs Perla dla biblioteki uulib
 Name:		perl-Convert-UUlib
 Version:	1.06
 Release:	3
