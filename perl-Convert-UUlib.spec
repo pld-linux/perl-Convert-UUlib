@@ -33,6 +33,7 @@ kodującej/rozkodowującej uulib (nazywanej też uudeview/uuenview).
 	INSTALLDIRS=vendor
 
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %install
