@@ -4,14 +4,14 @@
 Summary:	Convert::UUlib - Perl interface to the uulib library
 Summary(pl.UTF-8):	Convert::UUlib - interfejs Perla dla biblioteki uulib
 Name:		perl-Convert-UUlib
-Version:	1.32
+Version:	1.33
 Release:	1
 Epoch:		2
 # same as perl, but library is GPL
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Convert/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	8f5f0a5d0eb0a106fc647cbeabba9fcf
+# Source0-md5:	d4e3330562e5d4f6c022b0a0619a2c71
 URL:		http://search.cpan.org/dist/Convert-UUlib/
 BuildRequires:	perl-devel >= 1:5.8.4
 BuildRequires:	rpm-perlprov >= 4.1-13
