@@ -50,6 +50,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README example-decoder
 %{perl_vendorarch}/Convert/*
 %dir %{perl_vendorarch}/auto/Convert/UUlib
-%{perl_vendorarch}/auto/Convert/UUlib/UUlib.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Convert/UUlib/UUlib.so
 %{_mandir}/man3/*
