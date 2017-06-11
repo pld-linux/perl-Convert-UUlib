@@ -5,7 +5,7 @@ Summary:	Convert::UUlib - Perl interface to the uulib library
 Summary(pl.UTF-8):	Convert::UUlib - interfejs Perla dla biblioteki uulib
 Name:		perl-Convert-UUlib
 Version:	1.33
-Release:	11
+Release:	12
 Epoch:		2
 # same as perl, but library is GPL
 License:	GPL
