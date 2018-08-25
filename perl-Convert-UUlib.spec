@@ -4,15 +4,16 @@
 Summary:	Convert::UUlib - Perl interface to the uulib library
 Summary(pl.UTF-8):	Convert::UUlib - interfejs Perla dla biblioteki uulib
 Name:		perl-Convert-UUlib
-Version:	1.33
-Release:	12
-Epoch:		2
+Version:	1.5
+Release:	1
+Epoch:		3
 # same as perl, but library is GPL
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Convert/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	d4e3330562e5d4f6c022b0a0619a2c71
+# Source0-md5:	3332731b274723772ee8ad79c45bc401
 URL:		http://search.cpan.org/dist/Convert-UUlib/
+BuildRequires:	perl-Canary-Stability >= 2012
 BuildRequires:	perl-devel >= 1:5.8.4
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -29,6 +30,7 @@ kodującej/rozkodowującej uulib (nazywanej też uudeview/uuenview).
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
+PERL_CANARY_STABILITY_NOPROMPT=1 \
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 
