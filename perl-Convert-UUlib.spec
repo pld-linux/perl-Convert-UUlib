@@ -12,6 +12,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Convert/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	da734f09c9a73aed957d6dd5034bd856
 URL:		http://search.cpan.org/dist/Convert-UUlib/
+BuildRequires:	autoconf
 BuildRequires:	perl-Canary-Stability >= 2012
 BuildRequires:	perl-devel >= 1:5.8.4
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -29,6 +30,9 @@ kodującej/rozkodowującej uulib (nazywanej też uudeview/uuenview).
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
+cd uulib
+%{__autoconf}
+cd ..
 PERL_CANARY_STABILITY_NOPROMPT=1 \
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
